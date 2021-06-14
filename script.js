@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
+var password = document.querySelector("#password");
 // Write password to the #password input
 function writePassword() {
   
@@ -17,17 +17,18 @@ function writePassword() {
   if (lengthofPassword >= 128){
     console.log("password should be less than 128");
     alert("password should be less than 128");
-    
+     
+    return lengthofPassword;
   }
-  else {
-    console.log('They are not equal');
-  };
+
+ 
+
+  
   // If password is valid, generate lengthofPassword in passwordText.value box.
  // return lengthofPassword;
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  
 
-
+ 
   passwordText.value = password;
 
 }
